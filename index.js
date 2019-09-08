@@ -7,6 +7,7 @@ module.exports.plugins = [
   require("remark-lint"),
   // Leave preset at the top so it can be overridden
   require("remark-preset-lint-recommended"),
+  require("remark-preset-lint-markdown-style-guide"),
   [require("remark-lint-blockquote-indentation"), 2],
   [
     require("remark-lint-checkbox-character-style"),
@@ -24,7 +25,6 @@ module.exports.plugins = [
   require("remark-lint-final-definition"),
   [require("remark-lint-first-heading-level"), 1],
   [require("remark-lint-heading-style"), "atx"],
-  [require("remark-lint-list-item-bullet-indent"), false],
   [require("remark-lint-list-item-indent"), "space"],
   require("remark-lint-maximum-line-length"),
   require("remark-lint-no-auto-link-without-protocol"),
@@ -36,11 +36,9 @@ module.exports.plugins = [
   [require("remark-lint-no-literal-urls"), false],
   require("remark-lint-no-multiple-toplevel-headings"),
   require("remark-lint-no-shell-dollars"),
-  [require("remark-lint-no-shortcut-reference-link"), false],
   require("remark-lint-no-table-indentation"),
   require("remark-lint-no-tabs"),
   require("remark-lint-no-trailing-spaces"),
-  [require("remark-lint-no-undefined-references"), false],
   [
     require("remark-lint-prohibited-strings"),
     [
